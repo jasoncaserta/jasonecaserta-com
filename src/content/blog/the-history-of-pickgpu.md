@@ -15,21 +15,27 @@ Before there was a website, there was a spreadsheet. I was trying to figure out 
 
 A coworker noticed what I was doing and suggested it might be useful to others. That was the spark. I was excited to dive into my first real personal project.
 
-## The MVP: May - August 2023
+## The MVP: May - July 2023
 
 Coming from a backend background, building a full web application was daunting. I reached out to my friend and coworker, Kuba, who was also looking for a project to sink his teeth into. We decided to team up: I would handle the backend while Kuba worked on the frontend.
 
 The first commit was made on May 4, 2023. From there, we spent the next few months turning the spreadsheet idea into something people could actually use in a browser.
 
-By August 4, 2023, we had our first prototype—a Flask and React application. It was basic but functional: Tom's Hardware benchmark data, Amazon and eBay price data, and a sortable table.
+By July 10, 2023, we had tagged `v0.0.1`: the first real MVP of pickGPU. It was a Flask and React application, and it was basic but functional: Tom's Hardware benchmark data, Amazon and eBay price data, a sortable GPU table, filters, and rough value-per-FPS calculations.
 
-![Our first homepage](../../assets/history-of-pickgpu/localhost_5175_(1080p).png)
+![Our first homepage](../../assets/history-of-pickgpu/localhost_5173_(1080p).png)
 
-At this stage, the "Help me pick a GPU" feature wasn't working yet, but the core table and filter drawer were live. We were even starting to pull in specific listings and deal data.
+At this stage, the "Help me pick a GPU" feature wasn't working yet, but the core table and filter drawer were live. The spreadsheet idea had become something interactive: you could sort cards, compare new and used prices, and start to reason about performance against cost.
 
-![The early table and filter drawer](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(1).png)
+![The early table and filter drawer](../../assets/history-of-pickgpu/localhost_5173_analyze(1080p).png)
 
-![GPU listings in the early table](../../assets/history-of-pickgpu/localhost_5175_analyze(1080p).png)
+You could also expand rows to see the Amazon and eBay listings behind the numbers, which was important because the site was not just ranking GPUs in the abstract. It was trying to answer the original question: what can I actually buy right now?
+
+![Expanded rows with Amazon and eBay listings](../../assets/history-of-pickgpu/localhost_5173_analyze(1080p)_(1).png)
+
+Mobile was not ready yet. The MVP proved the idea, but it was still very much a desktop-first tool.
+
+![The MVP mobile experience](../../assets/history-of-pickgpu/localhost_5173_(iPhone_12_Pro).png)
 
 ## Refinements: August - October 2023
 
