@@ -155,7 +155,8 @@ hr {
 
 .image-grid img {
 	margin: 0 !important;
-	width: 100%;
+	width: 100% !important;
+	max-width: 100% !important;
 	height: auto;
 	object-fit: contain;
 	display: block;
