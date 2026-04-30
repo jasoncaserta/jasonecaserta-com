@@ -107,7 +107,7 @@ Top Picks became less of a survey result page and more of a direct recommendatio
 
 The table also came back in a much more polished form. It kept the dense comparison workflow from the original project, but the layout, controls, and visual hierarchy were all much clearer.
 
-![The revived table view](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(9).png)
+![The revived table view](../../assets/history-of-pickgpu/localhost_5173_(1080p)_(5).png)
 
 The plot view returned too, still centered on the original idea of visualizing price against performance.
 
@@ -119,7 +119,7 @@ The mobile experience was also no longer an afterthought. It still was not the f
 
 ![The revived mobile Top Picks view](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(6).png)
 
-![The revived mobile table view](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(7).png)
+![The revived mobile table view](../../assets/history-of-pickgpu/localhost_5173_analyze_performanceColumn=1080pUltraFps(iPhone_12_Pro).png)
 
 ![The revived mobile plot view](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(8).png)
 
@@ -145,6 +145,16 @@ The about page also became part of the product, explaining how prices, benchmark
 
 ![The current about page](../../assets/history-of-pickgpu/pickgpu.com_(1080p)_(4).png)
 
+Mobile finally got the polish it deserved. Instead of being a compromised version of the desktop site.
+
 ![The current mobile homepage](../../assets/history-of-pickgpu/pickgpu.com_(iPhone_12_Pro).png)
+
+![The current mobile Top Picks view](../../assets/history-of-pickgpu/pickgpu.com_mobile_top_picks.png)
+
+![The current mobile table view](../../assets/history-of-pickgpu/pickgpu.com_mobile_table.png)
+
+![The current mobile compare view](../../assets/history-of-pickgpu/pickgpu.com_mobile_compare.png)
+
+![The current mobile details view](../../assets/history-of-pickgpu/pickgpu.com_mobile_details.png)
 
 pickGPU has come a long way from that first Google Sheet, and it's been an incredible learning experience every step of the way.
