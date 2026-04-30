@@ -156,7 +156,7 @@ hr {
 .image-grid img {
 	margin: 0 !important;
 	width: 100% !important;
-	max-width: 100% !important;
+	max-width: 100%;
 	height: auto;
 	object-fit: contain;
 	display: block;
@@ -165,7 +165,7 @@ hr {
 .image-grid img:last-child:nth-child(odd) {
 	grid-column: 1 / span 2;
 	justify-self: center;
-	max-width: calc(50% - 0.75rem); /* Match width of other columns minus half the gap */
+	max-width: calc(50% - 0.75rem) !important;
 }
 @media (max-width: 720px) {
 	.image-grid {
