@@ -25,11 +25,11 @@ By July 10, 2023, we had tagged `v0.0.1`: the first real MVP of pickGPU. It was 
 
 ![Our first homepage](../../assets/history-of-pickgpu/localhost_5173_(1080p).png)
 
-At this stage, the "Help me pick a GPU" feature wasn't working yet, but the core table and filter drawer were live. The spreadsheet idea had become something interactive: you could sort cards, compare new and used prices, and start to reason about performance against cost.
+At this stage, the "Help me pick a GPU" feature wasn't working yet, but the core table and filter drawer were live. The spreadsheet idea had become something interactive: you could sort cards, compare new and used prices, and start to reason about performance against cost. Also we had an idea for Top Picks really early on.
 
 ![The early table and filter drawer](../../assets/history-of-pickgpu/localhost_5173_analyze(1080p).png)
 
-You could also expand rows to see the Amazon and eBay listings behind the numbers, which was important because the site was not just ranking GPUs in the abstract. It was trying to answer the original question: what can I actually buy right now?
+You could also expand rows to see the Amazon and eBay listings behind the numbers, which was important because the site was trying to answer the original question: what can I actually buy right now?
 
 ![Expanded rows with Amazon and eBay listings](../../assets/history-of-pickgpu/localhost_5173_analyze(1080p)_(1).png)
 
@@ -39,7 +39,7 @@ Mobile was not ready yet. The MVP proved the idea, but it was still very much a 
 
 ## Refinements Leading Up to Launch
 
-By November 2023, pickGPU had moved beyond the original sortable table into something closer to a real product. We refined the homepage, added dedicated views for the table, top picks, suggestions, and plots, and built a survey that let users tailor recommendations to their needs.
+By November 2023, pickGPU had moved beyond the original sortable table into something closer to a real product. We refined the homepage, added dedicated views for the table view, top picks, and plot view.
 
 ![The refined pre-launch homepage](../../assets/history-of-pickgpu/pre_reddit_home.png)
 
@@ -47,11 +47,11 @@ The table view became much easier to use. It was still dense, but the filtering,
 
 ![The pre-launch table view](../../assets/history-of-pickgpu/pre_reddit_table.png)
 
-We also fleshed out the Top Picks page. It included a survey, which let users get recommendations based on their budget, target resolution, graphics quality, and other preferences.
+We also fleshed out the Top Picks page, which included a survey to tailor recommendations to their needs.
 
 ![Top Picks and the recommendation survey](../../assets/history-of-pickgpu/pre_reddit_top_picks.png)
 
-And we added a plot view to make the price-to-performance tradeoffs more visual.
+And we added a plot view to allow users to visualize the data.
 
 ![The pre-launch plot view](../../assets/history-of-pickgpu/pre_reddit_plot.png)
 
@@ -59,11 +59,11 @@ Mobile was mostly functional by this point, which was a big step forward from th
 
 ![The pre-launch mobile homepage](../../assets/history-of-pickgpu/pre_reddit_mobile_home.png)
 
-But it was still missing polish. The experience felt cramped.
+But it was still missing polish for example the experience felt a bit cramped at times.
 
 ![The pre-launch mobile menu](../../assets/history-of-pickgpu/pre_reddit_mobile_menu.png)
 
-The table view was basically unusable on phones so we decided to blocked it for the time being.
+The table view was essentially unusable on phones so we decided to blocked it for the time being thinking that most of our users would be using a desktop anyway.
 
 ![The blocked mobile table view](../../assets/history-of-pickgpu/pre_reddit_mobile_table_blocked.png)
 
@@ -77,11 +77,11 @@ On November 11, 2023, we finally felt ready to share pickGPU with the world. We 
 
 It did not go exactly as expected. The feedback was "honest," to say the least, but it gave us a mountain of improvements to work on. The pre-launch version had come a long way from the MVP, but sharing it with strangers made the remaining gaps much more obvious.
 
-The biggest issue was that the site was not reliably loading. People were seeing failed API requests, infinite skeleton loaders, blank pages, and routes that never returned data. On mobile, the problems were even more obvious: the table was blocked or unusable, the navigation felt cramped, and several users closed the site before they could really evaluate the idea.
+The biggest issue was that the site was not reliably loading. People were seeing failed API requests, infinite skeleton loaders, blank pages, and routes that never returned data. On mobile, the problems were even more obvious: the table was blocked, the navigation felt cramped, and several users closed the site before they could really evaluate the idea.
 
-There was also an infrastructure lesson hiding in the launch. We were running on a tiny EC2 `t2.micro`, and at the time we were not aware of CPU credit balance. My best guess is that the Reddit traffic burned through those credits quickly, which made the site feel much worse right when the most people were trying it.
+There was also an infrastructure lesson hiding in the launch. We were running on a tiny EC2 `t2.micro`, and at the time we were not aware of CPU credit balance. My best guess for why we had filed API requests was that the Reddit traffic burned through those credits quickly, which made the site feel much worse right when the most people were trying it.
 
-The feedback was not all negative, though. A few people liked the concept and the visual direction once the site was reachable. The useful criticism was that the product needed to be faster, more resilient, more mobile-friendly, and clearer about what the benchmark numbers meant.
+The feedback was not all negative, though. A few people liked the concept and the visual direction once the site was reachable. The useful criticism was that the product needed to be faster, more resilient, more mobile-friendly.
 
 ## The Hiatus
 
