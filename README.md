@@ -43,3 +43,5 @@ pubDate: YYYY-MM-DD
 heroImage: "../../assets/blog-placeholder-1.jpg"
 ---
 ```
+
+<!-- Trigger redeploy -->
