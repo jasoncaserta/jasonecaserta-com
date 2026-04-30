@@ -116,12 +116,10 @@ The plot view returned too, still centered on the original idea of visualizing p
 The mobile experience was also no longer an afterthought. It still was not the final version of the site, but compared with the 2023 launch it was a major step forward.
 
 <div class="image-grid">
-
 ![The revived mobile homepage](../../assets/history-of-pickgpu/revival-mobile-home.png)
 ![The revived mobile Top Picks view](../../assets/history-of-pickgpu/revival-mobile-top-picks.png)
 ![The revived mobile table view](../../assets/history-of-pickgpu/revival-mobile-table.png)
 ![The revived mobile plot view](../../assets/history-of-pickgpu/revival-mobile-plot.png)
-
 </div>
 
 ## Final Polish and the Modern Experience
@@ -151,13 +149,11 @@ The about page also became part of the product, explaining how prices, benchmark
 Mobile finally got the polish it deserved. Instead of being a compromised version of the desktop site, the main workflows became comfortable to use from a phone.
 
 <div class="image-grid">
-
 ![The current mobile homepage](../../assets/history-of-pickgpu/mobile-home.png)
 ![The current mobile Top Picks view](../../assets/history-of-pickgpu/mobile-top-picks.png)
 ![The current mobile table view](../../assets/history-of-pickgpu/mobile-table.png)
 ![The current mobile compare view](../../assets/history-of-pickgpu/mobile-compare.png)
 ![The current mobile details view](../../assets/history-of-pickgpu/mobile-details.png)
-
 </div>
 
 pickGPU has come a long way from that first Google Sheet, and it's been an incredible learning experience every step of the way.
