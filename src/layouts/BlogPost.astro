@@ -54,8 +54,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			}
 			/* Individual mobile screenshot styling */
 			:global(.prose img[src*="mobile"]:not(.image-grid img)) {
-				width: 300px;
-				max-width: 100%;
+				width: 300px; /* Preferred width on larger screens */
+				max-width: calc(50% - 1rem); /* Match scale of grid items on all screens */
 				margin: 2rem auto;
 				display: block;
 				box-shadow: var(--box-shadow);
