@@ -37,38 +37,51 @@ Mobile was not ready yet. The MVP proved the idea, but it was still very much a 
 
 ![The MVP mobile experience](../../assets/history-of-pickgpu/localhost_5173_(iPhone_12_Pro).png)
 
-## Refinements: August - October 2023
+## Refinements Leading Up to Launch
 
-By late 2023, pickGPU started evolving from a "sortable table" into a "guided recommendation engine." We added a suggestions survey flow, improved our routing, and started building out historical price tracking.
+By November 2023, pickGPU had moved beyond the original sortable table into something closer to a real product. We refined the homepage, added dedicated views for the table, top picks, suggestions, and plots, and built a survey that let users tailor recommendations to their needs.
 
-The UI received a significant refresh, adding dedicated routes for specific GPUs, plots for price-to-performance visualization, and a more polished navigation experience.
+![The refined pre-launch homepage](../../assets/history-of-pickgpu/pre_reddit_home.png)
 
-![The refreshed homepage](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(2).png)
+The table view became much easier to use. It was still dense, but the filtering, sorting, and value labels made the core workflow clearer than the MVP version.
 
-![A better interface for the GPU table](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(3)_1.png)
+![The pre-launch table view](../../assets/history-of-pickgpu/pre_reddit_table.png)
 
-We introduced "Top Picks" and a survey to help users find GPUs that matched their specific needs.
+We also fleshed out the Top Picks page. It included a survey, which let users get recommendations based on their budget, target resolution, graphics quality, and other preferences.
 
-![Top Picks and Survey features](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(4).png)
-![The recommendation survey](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(6).png)
+![Top Picks and the recommendation survey](../../assets/history-of-pickgpu/pre_reddit_top_picks.png)
 
-We also added a plot view to help visualize the value of different cards.
+And we added a plot view to make the price-to-performance tradeoffs more visual.
 
-![The GPU value plot view](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(5).png)
+![The pre-launch plot view](../../assets/history-of-pickgpu/pre_reddit_plot.png)
+
+Mobile was mostly functional by this point, which was a big step forward from the MVP.
+
+![The pre-launch mobile homepage](../../assets/history-of-pickgpu/pre_reddit_mobile_home.png)
+
+But it was still missing polish. The experience felt cramped.
+
+![The pre-launch mobile menu](../../assets/history-of-pickgpu/pre_reddit_mobile_menu.png)
+
+The table view was basically unusable on phones so we decided to blocked it for the time being.
+
+![The blocked mobile table view](../../assets/history-of-pickgpu/pre_reddit_mobile_table_blocked.png)
+
+And the plot view clearly needed some work.
+
+![The rough mobile plot view](../../assets/history-of-pickgpu/pre_reddit_mobile_plot.png)
 
 ## The Reddit Launch
 
 On November 11, 2023, we finally felt ready to share pickGPU with the world. We posted to the [r/webdev](https://www.reddit.com/r/webdev/comments/17t55mk/roast_my_website_built_to_help_you_pick_your_next/) subreddit.
 
-It did not go exactly as expected. The feedback was "honest," to say the least, but it gave us a mountain of improvements to work on. We realized that while our desktop experience was getting there, our mobile view still had major gaps.
+It did not go exactly as expected. The feedback was "honest," to say the least, but it gave us a mountain of improvements to work on. The pre-launch version had come a long way from the MVP, but sharing it with strangers made the remaining gaps much more obvious.
 
-![Early mobile improvements](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(2).png)
-![Mobile view challenges](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(1).png)
+The biggest issue was that the site was not reliably loading. People were seeing failed API requests, infinite skeleton loaders, blank pages, and routes that never returned data. On mobile, the problems were even more obvious: the table was blocked or unusable, the navigation felt cramped, and several users closed the site before they could really evaluate the idea.
 
-We struggled with the table view on mobile, eventually deciding to hide it on phones until we could find a better layout.
+There was also an infrastructure lesson hiding in the launch. We were running on a tiny EC2 `t2.micro`, and at the time we were not aware of CPU credit balance. My best guess is that the Reddit traffic burned through those credits quickly, which made the site feel much worse right when the most people were trying it.
 
-![Table view mobile issues](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(4).png)
-![Plot view mobile issues](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(3).png)
+The feedback was not all negative, though. A few people liked the concept and the visual direction once the site was reachable. The useful criticism was that the product needed to be faster, more resilient, more mobile-friendly, and clearer about what the benchmark numbers meant.
 
 ## The Hiatus
 

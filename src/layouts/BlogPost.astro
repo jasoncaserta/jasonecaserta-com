@@ -53,7 +53,8 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				font-style: italic;
 			}
 			/* Mobile screenshot styling */
-			:global(.prose img[src*="iPhone"]) {
+			:global(.prose img[src*="iPhone"]),
+			:global(.prose img[src*="mobile"]) {
 				max-width: 300px;
 				margin: 0 auto;
 				display: block;
