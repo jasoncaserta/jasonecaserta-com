@@ -160,6 +160,7 @@ hr {
 	height: auto;
 	object-fit: contain;
 	display: block;
+	box-shadow: var(--box-shadow);
 }
 
 .image-grid img:last-child:nth-child(odd) {
@@ -167,12 +168,9 @@ hr {
 	justify-self: center;
 	max-width: calc(50% - 0.75rem) !important;
 }
+
 @media (max-width: 720px) {
 	.image-grid {
-		grid-template-columns: 1fr;
-	}
-	.image-grid img:last-child:nth-child(odd) {
-		grid-column: auto;
-		max-width: 100%;
+		gap: 0.75rem; /* Smaller gap on mobile */
 	}
 }
