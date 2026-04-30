@@ -55,21 +55,16 @@ And we added a plot view to allow users to visualize the data.
 
 ![The pre-launch plot view](../../assets/history-of-pickgpu/pre-launch-plot.png)
 
-Mobile was mostly functional by this point, which was a big step forward from the MVP.
+Mobile was mostly functional by this point, which was a big step forward from the MVP. However, it was still missing polish; the experience felt cramped, the table view was essentially unusable on phones (so we blocked it), and the plot view clearly needed work.
+
+<div class="image-grid">
 
 ![The pre-launch mobile homepage](../../assets/history-of-pickgpu/pre-launch-mobile-home.png)
-
-But it was still missing polish for example the experience felt a bit cramped at times.
-
 ![The pre-launch mobile menu](../../assets/history-of-pickgpu/pre-launch-mobile-menu.png)
-
-The table view was essentially unusable on phones so we decided to blocked it for the time being thinking that most of our users would be using a desktop anyway.
-
 ![The blocked mobile table view](../../assets/history-of-pickgpu/pre-launch-mobile-table-blocked.png)
-
-And the plot view clearly needed some work.
-
 ![The rough mobile plot view](../../assets/history-of-pickgpu/pre-launch-mobile-plot.png)
+
+</div>
 
 ## The Reddit Launch
 
