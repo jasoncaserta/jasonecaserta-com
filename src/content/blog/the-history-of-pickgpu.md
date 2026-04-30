@@ -131,19 +131,21 @@ The homepage also came back around to the original MVP idea. The main call to ac
 
 ![The current pickGPU homepage](../../assets/history-of-pickgpu/pickgpu.com_(1080p).png)
 
-Top Picks and Table View also became more useful by bringing the plot directly into both workflows and adding listing previews. Instead of forcing users to jump between separate pages to understand price, performance, and the actual listings behind a recommendation, the modern site puts more of that context in one place.
+Top Picks and Table View also became more useful by bringing the Plot View directly into both workflows and adding listing previews, bringing more context to each route.
 
 ![The current Top Picks view](../../assets/history-of-pickgpu/pickgpu.com_(1080p)_(5).png)
 
 ![The current table view](../../assets/history-of-pickgpu/pickgpu.com_(1080p)_(1).png)
 
-The latest version also includes workflows that did not exist in the original project, including side-by-side GPU comparisons and custom benchmark uploads that let users bring their own performance data.
+The latest version also includes workflows that did not exist in the original project, including side-by-side GPU comparisons. 
 
 ![The current compare view](../../assets/history-of-pickgpu/pickgpu.com_(1080p)_(2).png)
 
+And custom benchmark uploads that let users bring their own performance data.
+
 ![The current custom benchmark view](../../assets/history-of-pickgpu/pickgpu.com_(1080p)_(3).png)
 
-The about page also became part of the product, explaining how prices, benchmarks, and pickGPU Score work instead of leaving users to infer the logic from the table.
+We also added an about page which explains in detail how pickGPU works.
 
 ![The current about page](../../assets/history-of-pickgpu/pickgpu.com_(1080p)_(4).png)
 
@@ -157,6 +159,6 @@ Mobile finally got the polish it deserved. Instead of being a compromised versio
 
 ![The current mobile compare view](../../assets/history-of-pickgpu/pickgpu.com_mobile_compare.png)
 
-![The current mobile details view](../../assets/history-of-pickgpu/pickgpu.com_mobile_details.png)
+![The current mobile custom benchmarks](../../assets/history-of-pickgpu/pickgpu.com_mobile_details.png)
 
 pickGPU has come a long way from that first Google Sheet, and it's been an incredible learning experience every step of the way.
