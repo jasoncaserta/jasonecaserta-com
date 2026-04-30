@@ -106,9 +106,10 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			import mediumZoom from 'medium-zoom';
 			
 			// Initialize medium-zoom on all images within the prose container
-			mediumZoom('.prose img', {
+			const zoom = mediumZoom('.prose img', {
 				margin: 24,
 				background: 'rgba(255, 255, 255, 0.9)',
+				scrollOffset: 40, // Allow some scrolling before dismissing
 			});
 		</script>
 	</body>
