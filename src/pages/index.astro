@@ -88,10 +88,11 @@ const posts = (await getCollection('blog'))
 				<h1>Jason Caserta</h1>
 				<p>Software developer. I build things for the web.</p>
 				<div class="hero-links">
-					<a href="/blog">Writing →</a>
-					<a href="/about">About</a>
+					<a href={`${import.meta.env.BASE_URL}blog`}>Writing →</a>
+					<a href={`${import.meta.env.BASE_URL}about`}>About</a>
 					<a href="https://github.com/jasoncaserta" target="_blank">GitHub</a>
 				</div>
+
 			</div>
 
 			{posts.length > 0 && (
@@ -100,11 +101,12 @@ const posts = (await getCollection('blog'))
 					<ul class="post-list">
 						{posts.map((post) => (
 							<li>
-								<a href={`/blog/${post.id}/`}>{post.data.title}</a>
+								<a href={`${import.meta.env.BASE_URL}blog/${post.id}/`}>{post.data.title}</a>
 								<span class="post-date">
 									<FormattedDate date={post.data.pubDate} />
 								</span>
 							</li>
+
 						))}
 					</ul>
 				</section>
