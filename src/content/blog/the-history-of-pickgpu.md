@@ -89,11 +89,37 @@ After the intensity of the launch and the subsequent feedback, the project enter
 
 ## The 2026 Revival
 
-In early 2026, the revival began. This wasn't just a few tweaks; it was a massive architectural rebuild. We moved the backend from Flask to FastAPI, transitioned to a more robust SQLite/CSV data pipeline, and completely modernized the frontend with React Query and TanStack Router.
+In early 2026, the revival began. This was not just a visual refresh; it was a full rearchitecture rebuild. The backend moved from a Flask app built around module-level DataFrames to a FastAPI service with scheduled refresh jobs, structured logging, and SQLite-backed persistence.
 
-This technical foundation was crucial for creating a more resilient and faster application.
+The biggest backend change was introducing SQLite. Instead of recomputing everything into in-memory globals and hoping the process stayed healthy, pickGPU now loaded Tom's Hardware data, validated Amazon/eBay listings, current prices, and historical prices into database tables. That gave us a real cache between expensive scraping/validation work and the user-facing site.
 
-![The modern pickGPU homepage](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(7).png)
+The frontend changed shape too. We moved to React Query for server state and TanStack Router for route structure, which made the app feel less like a collection of pages calling ad hoc endpoints and more like a product with consistent data loading, route-specific views, and shared filtering behavior.
+
+The first visible result was a new version of pickGPU that already felt much more intentional. The homepage was cleaner, the product had a clearer identity, and the main paths through the app were organized around Top Picks, Table View, and Plot View.
+
+![The revived pickGPU homepage](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(7).png)
+
+Top Picks became less of a survey result page and more of a direct recommendation view. It focused on showing the best value GPUs at their lowest available prices, with filters and sorting built around the way people were actually comparing cards.
+
+![The revived Top Picks view](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(8).png)
+
+The table also came back in a much more polished form. It kept the dense comparison workflow from the original project, but the layout, controls, and visual hierarchy were all much clearer.
+
+![The revived table view](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(9).png)
+
+The plot view returned too, still centered on the original idea of visualizing price against performance.
+
+![The revived plot view](../../assets/history-of-pickgpu/localhost_5175_(1080p)_(10).png)
+
+The mobile experience was also no longer an afterthought. It still was not the final version of the site, but compared with the 2023 launch it was a major step forward.
+
+![The revived mobile homepage](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(5).png)
+
+![The revived mobile Top Picks view](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(6).png)
+
+![The revived mobile table view](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(7).png)
+
+![The revived mobile plot view](../../assets/history-of-pickgpu/localhost_5175_(iPhone_12_Pro)_(8).png)
 
 ## Final Polish and the Modern Experience
 
