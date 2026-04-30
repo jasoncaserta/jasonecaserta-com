@@ -127,9 +127,11 @@ The mobile experience was also no longer an afterthought. It still was not the f
 
 With the new architecture in place, we turned our focus to the final polish. This era brought the modern pickGPU experience you see today: a clearer homepage, top picks, table and compare views, custom benchmark support, pricing across multiple retailers, and—finally—a responsive design where mobile is no longer an afterthought.
 
+The homepage also came back around to the original MVP idea. The main call to action became "Find My GPU," a more polished version of the early "Help me pick a GPU" flow we had wanted from the beginning.
+
 ![The current pickGPU homepage](../../assets/history-of-pickgpu/pickgpu.com_(1080p).png)
 
-The table view finally became what we had envisioned years ago—dense, informative, and easy to filter, with listing previews built directly into the workflow.
+Top Picks and Table View also became more useful by bringing the plot directly into both workflows and adding listing previews. Instead of forcing users to jump between separate pages to understand price, performance, and the actual listings behind a recommendation, the modern site puts more of that context in one place.
 
 ![The current Top Picks view](../../assets/history-of-pickgpu/pickgpu.com_(1080p)_(5).png)
 
@@ -145,7 +147,7 @@ The about page also became part of the product, explaining how prices, benchmark
 
 ![The current about page](../../assets/history-of-pickgpu/pickgpu.com_(1080p)_(4).png)
 
-Mobile finally got the polish it deserved. Instead of being a compromised version of the desktop site.
+Mobile finally got the polish it deserved. Instead of being a compromised version of the desktop site, the main workflows became comfortable to use from a phone.
 
 ![The current mobile homepage](../../assets/history-of-pickgpu/pickgpu.com_(iPhone_12_Pro).png)
 
