@@ -89,7 +89,9 @@ After the intensity of the launch and the subsequent feedback, the project enter
 
 ## The 2026 Revival
 
-In early 2026, the revival began. This was not just a visual refresh; it was a full rearchitecture rebuild. The backend moved from a Flask app built around module-level DataFrames to a FastAPI service with scheduled refresh jobs, structured logging, and SQLite-backed persistence.
+In early 2026, a layoff gave me an unexpected push to return to pickGPU. I suddenly had the time, motivation, and urgency to revisit the project with a lot more experience than I had in 2023.
+
+The revival was not just a visual refresh; it was a full architectural rebuild. The backend moved from a single Flask app that kept its working data in module-level pandas DataFrames to a FastAPI service backed by scheduled refresh jobs, structured logging, SQLite persistence, and caching.
 
 The biggest backend change was introducing SQLite. Instead of recomputing everything into in-memory globals and hoping the process stayed healthy, pickGPU now loaded Tom's Hardware data, validated Amazon/eBay listings, current prices, and historical prices into database tables. That gave us a real cache between expensive scraping/validation work and the user-facing site.
 
