@@ -60,6 +60,17 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				display: block;
 				box-shadow: var(--box-shadow);
 			}
+
+			/* Zoom styles */
+			:global(.prose img) {
+				cursor: zoom-in;
+			}
+			:global(.medium-zoom-overlay) {
+				z-index: 100;
+			}
+			:global(.medium-zoom-image--opened) {
+				z-index: 101;
+			}
 		</style>
 	</head>
 
@@ -90,5 +101,15 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			</article>
 		</main>
 		<Footer />
+
+		<script>
+			import mediumZoom from 'medium-zoom';
+			
+			// Initialize medium-zoom on all images within the prose container
+			mediumZoom('.prose img', {
+				margin: 24,
+				background: 'rgba(255, 255, 255, 0.9)',
+			});
+		</script>
 	</body>
 </html>

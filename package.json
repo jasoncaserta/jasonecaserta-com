@@ -18,6 +18,7 @@
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
     "astro": "^6.1.9",
+    "medium-zoom": "^1.1.0",
     "sharp": "^0.34.3"
   }
 }
