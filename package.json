@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint": "npm run lint:assets",
+    "lint:assets": "node scripts/check-unused-assets.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",
