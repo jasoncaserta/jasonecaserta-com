@@ -1,4 +1,4 @@
-# [jasonecaserta-com](https://jasoncaserta.github.io/jasonecaserta-com/)
+# [jasoncaserta.com](https://jasoncaserta.com)
 
 
 Personal website and blog built with [Astro](https://astro.build).
@@ -8,7 +8,7 @@ Personal website and blog built with [Astro](https://astro.build).
 - **Framework:** Astro (static output)
 - **Content:** Markdown blog posts in `src/content/blog/`
 - **Hosting:** GitHub Pages
-- **URL:** [https://jasoncaserta.github.io/jasonecaserta-com/](https://jasoncaserta.github.io/jasonecaserta-com/)
+- **URL:** [https://jasoncaserta.com](https://jasoncaserta.com)
 
 ## Local Development
 
