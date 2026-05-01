@@ -2,7 +2,7 @@
 title: "Building PickGPU: 2,300 Commits of War Stories"
 description: "What I learned shipping a GPU price aggregator across six retailers, two years, and one very persistent Cloudflare wall."
 pubDate: 2026-04-25
-heroImage: "../../assets/history-of-pickgpu/current-home.png"
+heroImage: "../../assets/social-share.png"
 ---
 
 [PickGPU](https://pickgpu.com) is a GPU shopping assistant that aggregates benchmark data from Tom's Hardware and live pricing from Amazon, eBay, Best Buy, Newegg, and Micro Center. You set a budget, pick your resolution, and it ranks every card by FPS-per-dollar. Simple enough idea. What followed was 2,300 commits and counting.
