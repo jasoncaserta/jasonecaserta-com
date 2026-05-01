@@ -16,6 +16,17 @@
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 }
+
+.dark {
+	--black: 255, 255, 255;
+	--gray-dark: 229, 233, 240;
+	--gray: 159, 178, 222;
+	--gray-light: 28, 32, 41;
+	--gray-gradient: rgba(15, 18, 25, 100%), #0f1219;
+	--accent: #7ca1ff;
+	--accent-dark: #cbd9ff;
+}
+
 body {
 	font-family: var(--font-atkinson);
 	margin: 0;
@@ -23,11 +34,17 @@ body {
 	text-align: left;
 	background: linear-gradient(var(--gray-gradient)) no-repeat;
 	background-size: 100% 600px;
+	background-color: #fff; /* Light mode base */
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+	background-color: #0f1219; /* Dark mode base */
 }
 main {
 	width: 720px;
